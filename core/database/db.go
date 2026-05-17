@@ -1,4 +1,4 @@
-package connection
+package database
 
 import (
 	"encoding/json"
@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-const menuURL = "#"
+const menuURL = "https://gist.githubusercontent.com/NesANTIME/48b1f120d87039819d86d6a7e09ad8af/raw/814ea28955ebcd738a31cbaf65deb4dacfdbe801/prueba"
 
 type SubOption struct {
 	ID          string   `json:"id"`

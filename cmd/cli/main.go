@@ -1,11 +1,11 @@
-package main
+package cli
 
 import (
 	"fmt"
 	"os"
 	"strings"
 
-	"youcanhack/framework/controller"
+	"youcanhack/core"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
@@ -26,10 +26,10 @@ var (
 	colorSubAccent = lipgloss.Color("#f78166")
 )
 
-var menu []controller.MenuItem
+var menu []core.MenuItem
 
 func init() {
-	menu = controller.Get_BDLab()
+	menu = core.Get_BDLab()
 }
 
 // ── Modelo ────────────────────────────────────────────────────────────────────
